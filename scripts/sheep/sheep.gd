@@ -73,7 +73,7 @@ func _process(delta):
 		_roll_indicator.charge_progress(percentage)
 
 func _physics_process(delta):
-	if Input.is_action_just_pressed("fart") && _last_usage + cooldown < OS.get_ticks_msec()/1000.0:
+	if (Input.is_action_just_pressed("fart") || (Input.is_action_pressed("fart") && _charge_start == -1)) && _last_usage + cooldown < OS.get_ticks_msec()/1000.0:
 		_charge_start = OS.get_ticks_msec()/1000.0
 	
 	if Input.is_action_just_released("fart") && _charge_start != -1:
@@ -91,7 +91,7 @@ func _physics_process(delta):
 		
 		self.apply_central_impulse(direction * base_boost * multiplier)
 	
-	if Input.is_action_just_pressed("roll") && _roll_last_usage + roll_cooldown < OS.get_ticks_msec()/1000.0:
+	if (Input.is_action_just_pressed("roll") || (Input.is_action_pressed("roll") && _roll_charge_start == -1)) && _roll_last_usage + roll_cooldown < OS.get_ticks_msec()/1000.0:
 		_roll_charge_start = OS.get_ticks_msec() / 1000.0
 	if Input.is_action_just_released("roll") &&  _roll_charge_start != -1:
 		_roll_last_usage = OS.get_ticks_msec()/1000.0
@@ -99,7 +99,7 @@ func _physics_process(delta):
 		_roll_charge_start = -1
 		_roll_indicator.charge_progress(0)
 		apply_torque_impulse(base_roll * multiplier)
-		apply_central_impulse(Vector2.UP * 100)
+		apply_central_impulse(Vector2.DOWN * 100)
 
 
 func target_indicator_position(angle):
