@@ -8,6 +8,7 @@ var chunk_types = [
 	preload("res://scenes/chunks/empty.tscn"),
 	preload("res://scenes/chunks/block.tscn"),
 	preload("res://scenes/chunks/hole.tscn"),
+	preload("res://scenes/chunks/pavilion.tscn"),
 	preload("res://scenes/chunks/wall.tscn")
 ]
 var back_types = [
