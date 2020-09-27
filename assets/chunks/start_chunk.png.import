@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/startChunk.png-55aac79e53e68c56af49e0195d7775ec.stex"
+path="res://.import/start_chunk.png-b7d0d324f55fe316203b64e3e8a8cb2d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/chunks/startChunk.png"
-dest_files=[ "res://.import/startChunk.png-55aac79e53e68c56af49e0195d7775ec.stex" ]
+source_file="res://assets/chunks/start_chunk.png"
+dest_files=[ "res://.import/start_chunk.png-b7d0d324f55fe316203b64e3e8a8cb2d.stex" ]
 
 [params]
 
