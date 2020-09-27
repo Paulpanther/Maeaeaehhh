@@ -24,7 +24,6 @@ func _ready():
 
 
 func _process(delta): # update indicator
-	# smooth movement
 	_indicator.move_towards(target_indicator_position())
 	
 	# display recharge
