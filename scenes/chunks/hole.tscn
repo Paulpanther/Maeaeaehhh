@@ -15,7 +15,7 @@ extents = Vector2( 169.795, 131.639 )
 script = ExtResource( 2 )
 
 [node name="Body" type="StaticBody2D" parent="."]
-position = Vector2( 450.56, 0 )
+position = Vector2( 448, 0 )
 
 [node name="Sprite" type="Sprite" parent="Body"]
 position = Vector2( 0.559845, 63.576 )
@@ -31,4 +31,4 @@ position = Vector2( 278.887, 131.839 )
 shape = SubResource( 2 )
 
 [node name="End" type="Position2D" parent="Body"]
-position = Vector2( 450.56, 0 )
+position = Vector2( 448, 0 )
