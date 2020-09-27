@@ -82,10 +82,10 @@ func _physics_process(delta):
 		_charge_start = -1
 		_indicator.charge_progress(0)
 		
-		var direction = Vector2.RIGHT.rotated(rotation - PI/8).normalized() # bottom left
+		var direction = Vector2(1, -1).rotated(rotation).normalized() # top right
 		var particles : Particles2D = preload("res://scenes/sheep/fart_particles.tscn").instance()
 		particles.amount *= multiplier
-		particles.position = - Vector2.RIGHT.rotated(- PI/8).normalized() * $MainCol.shape.radius
+		particles.position = Vector2(-1, 1).normalized() * $MainCol.shape.radius
 		self.add_child(particles)
 		#particles.rotation = rotation #+ 3/8 * PI
 		
