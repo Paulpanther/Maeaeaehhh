@@ -23,6 +23,15 @@ config/icon="res://assets/sheep/icon.png"
 
 Score="*res://scripts/score.gd"
 
+[display]
+
+window/size/width=1433
+window/size/height=840
+window/size/test_width=1024
+window/size/test_height=600
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+
 [input]
 
 fart={
