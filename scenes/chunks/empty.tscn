@@ -3,7 +3,7 @@
 [ext_resource path="res://scripts/chunk.gd" type="Script" id=1]
 [ext_resource path="res://assets/chunks/empty.png" type="Texture" id=2]
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 319.966, 129.985 )
 
 [node name="Chunk" type="Node2D" groups=[
@@ -20,7 +20,7 @@ texture = ExtResource( 2 )
 
 [node name="HitBox" type="CollisionShape2D" parent="Body"]
 position = Vector2( 0, 130 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
 [node name="End" type="Position2D" parent="Body"]
 position = Vector2( 320, 0 )

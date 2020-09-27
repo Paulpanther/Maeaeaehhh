@@ -4,10 +4,12 @@ extends Node2D
 export var death_y = 200
 
 var end_offset = 100
+var start_chunk = preload("res://scenes/chunks/start_chunk.tscn")
 var chunk_types = [
 	preload("res://scenes/chunks/empty.tscn"),
 	preload("res://scenes/chunks/block.tscn"),
 	preload("res://scenes/chunks/hole.tscn"),
+	preload("res://scenes/chunks/pavilion.tscn"),
 	preload("res://scenes/chunks/wall.tscn")
 ]
 var back_types = [
@@ -19,7 +21,8 @@ var next_back = 0
 onready var camera = $Schaf # historisch gewachsen
 
 func _ready():
-	add_chunk()
+	var start = start_chunk.instance()
+	add_child(start)
 
 func _process(delta):
 	var end = get_end()
