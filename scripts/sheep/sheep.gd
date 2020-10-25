@@ -14,7 +14,7 @@ func get_start():
 
 # fart stuff
 
-export var base_boost = 250
+export var base_boost = 400
 export var charge_time = 2
 export var max_multiplier = 2 - 1
 export var cooldown = 3
