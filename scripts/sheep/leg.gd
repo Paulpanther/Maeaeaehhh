@@ -2,9 +2,9 @@ extends CollisionShape2D
 signal pressed
 
 
-export var torque := 5000.0
-export var force := 200.0
-export var force_in_air = 10
+export var torque := 10.0
+export var force := 400.0
+export var force_in_air = 10.0
 export var input : String = "ui_up"
 export var cooldown = 0.2
 var move_distance = 40
