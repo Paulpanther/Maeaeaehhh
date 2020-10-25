@@ -108,6 +108,7 @@ position = Vector2( 79.4959, -63.0924 )
 rotation = 0.884514
 scale = Vector2( 2.87108, 2.69216 )
 shape = SubResource( 2 )
+disabled = true
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 21.5121, -15.8108 )
