@@ -14,7 +14,7 @@ extents = Vector2( 85.0546, 8.51772 )
 extents = Vector2( 84.0297, 8 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 271.119, 10.4758 )
+extents = Vector2( 332.85, 10.4758 )
 
 [node name="Node2D" type="Node2D" groups=[
 "chunk",
@@ -37,7 +37,7 @@ shape = SubResource( 1 )
 position = Vector2( 996.765, 0 )
 
 [node name="Door1Spring" type="DampedSpringJoint2D" parent="Body"]
-position = Vector2( 54.3886, -395.113 )
+position = Vector2( 35.3183, -429.016 )
 node_a = NodePath("../Door1")
 node_b = NodePath("..")
 length = 20.0
@@ -45,12 +45,12 @@ stiffness = 9.4
 damping = 0.1
 
 [node name="Door1Pin" type="PinJoint2D" parent="Body"]
-position = Vector2( 195.931, -249.992 )
+position = Vector2( 167.326, -304.025 )
 node_a = NodePath("../Door1")
 node_b = NodePath("../Roof")
 
 [node name="Door1" type="RigidBody2D" parent="Body"]
-position = Vector2( 118.844, -250.359 )
+position = Vector2( 92.3574, -304.392 )
 
 [node name="Sprite" type="Sprite" parent="Body/Door1"]
 position = Vector2( 0, 1.62125e-05 )
@@ -62,7 +62,7 @@ position = Vector2( 0, 1.52588e-05 )
 shape = SubResource( 2 )
 
 [node name="Door2Spring" type="DampedSpringJoint2D" parent="Body"]
-position = Vector2( 869.702, -395.113 )
+position = Vector2( 949.162, -418.421 )
 node_a = NodePath("../Door2")
 node_b = NodePath("..")
 length = 20.0
@@ -70,12 +70,12 @@ stiffness = 9.4
 damping = 0.1
 
 [node name="Door2Pin" type="PinJoint2D" parent="Body"]
-position = Vector2( 717.142, -250.207 )
+position = Vector2( 818.85, -306.359 )
 node_a = NodePath("../Door2")
 node_b = NodePath("../Roof")
 
 [node name="Door2" type="RigidBody2D" parent="Body"]
-position = Vector2( 692.015, -249.206 )
+position = Vector2( 792.664, -304.298 )
 
 [node name="Sprite" type="Sprite" parent="Body/Door2"]
 position = Vector2( 100.478, -9.53674e-07 )
@@ -89,5 +89,5 @@ shape = SubResource( 3 )
 [node name="Roof" type="StaticBody2D" parent="Body"]
 
 [node name="HitBox" type="CollisionShape2D" parent="Body/Roof"]
-position = Vector2( 453, -248.518 )
+position = Vector2( 494.319, -303.61 )
 shape = SubResource( 4 )
