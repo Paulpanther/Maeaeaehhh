@@ -10,6 +10,7 @@ var chunk_types = [
 	preload("res://scenes/chunks/block.tscn"),
 	preload("res://scenes/chunks/hole.tscn"),
 	preload("res://scenes/chunks/pavilion.tscn"),
+	preload("res://scenes/chunks/landmine.tscn"),
 	preload("res://scenes/chunks/wall.tscn"),
 	preload("res://scenes/chunks/spike_pit.tscn")
 ]
