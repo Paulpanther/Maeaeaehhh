@@ -25,6 +25,16 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Timer" type="RichTextLabel" parent="UI"]
+anchor_left = 0.022
+anchor_right = 0.57
+margin_right = 67.0
+margin_bottom = 40.0
+text = "Time: 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -2
 
