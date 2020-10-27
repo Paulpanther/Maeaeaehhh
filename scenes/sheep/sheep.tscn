@@ -44,7 +44,8 @@ texture = ExtResource( 1 )
 [node name="LegRed" parent="." instance=ExtResource( 7 )]
 force = 500.0
 force_in_air = 10.0
-input = "ui_down"
+input_in = "ui_down_in"
+input_out = "ui_down_out"
 indicator_image = ExtResource( 4 )
 indicator_color = Color( 1, 0, 0, 1 )
 
@@ -71,7 +72,8 @@ position = Vector2( -48, 0 )
 rotation = 1.5708
 force = 500.0
 force_in_air = 10.0
-input = "ui_left"
+input_in = "ui_left_in"
+input_out = "ui_left_out"
 indicator_image = ExtResource( 8 )
 indicator_color = Color( 0.12549, 1, 0, 1 )
 
@@ -85,7 +87,8 @@ position = Vector2( 48, 0 )
 rotation = -1.5708
 force = 500.0
 force_in_air = 50.0
-input = "ui_right"
+input_in = "ui_right_in"
+input_out = "ui_right_out"
 indicator_image = ExtResource( 9 )
 indicator_color = Color( 1, 0.984314, 0, 1 )
 

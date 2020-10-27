@@ -5,7 +5,8 @@ signal pressed
 export var torque := 10.0
 export var force := 400.0
 export var force_in_air = 10.0
-export var input : String = "ui_up"
+export var input_in : String = "ui_up_in"
+export var input_out : String = "ui_up_out"
 export var cooldown = 0.2
 var move_distance = 40
 
@@ -34,8 +35,8 @@ func _process(delta): # update indicator
 		_indicator.ready_progress(percentage)
 
 
-func _physics_process(delta: float) -> void:
-	if Input.is_action_just_pressed(input) && _last_usage + cooldown < OS.get_ticks_msec()/1000:
+func _input(delta) -> void:
+	if Input.is_action_just_pressed(input_in) && _last_usage + cooldown < OS.get_ticks_msec()/1000:
 		emit_signal("pressed")
 		_last_usage = OS.get_ticks_msec()/1000
 		_is_active = true
@@ -70,7 +71,7 @@ func _physics_process(delta: float) -> void:
 		
 		position += position.normalized() * move_distance
 
-	if Input.is_action_just_released(input) && _is_active:
+	if Input.is_action_just_pressed(input_out) && _is_active:
 		_is_active = false
 		_indicator.set_active(false)
 		position -= position.normalized() * move_distance
